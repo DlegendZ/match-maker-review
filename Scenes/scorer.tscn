@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsvhewhvf0pje"]
+
+[ext_resource type="Script" path="res://Script/scorer.gd" id="1_md1a3"]
+
+[node name="scorer" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_md1a3")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Timer2" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="timeout_same"]
+[connection signal="timeout" from="Timer2" to="." method="timeout_diff"]

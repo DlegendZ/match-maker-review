@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhk0oplfn5sdi"]
+
+[ext_resource type="Script" path="res://Script/front_animation.gd" id="1_tgb67"]
+
+[node name="front_animation" type="TextureRect"]
+offset_right = 120.0
+offset_bottom = 120.0
+pivot_offset = Vector2(60, 60)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_tgb67")

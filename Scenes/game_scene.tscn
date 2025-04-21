@@ -1,0 +1,168 @@
+[gd_scene load_steps=14 format=3 uid="uid://5vu1ci0324kr"]
+
+[ext_resource type="FontFile" uid="uid://bth5fagu36ydm" path="res://Assets/Pixelart/Font/LilitaOne-Regular.ttf" id="1_ffjb5"]
+[ext_resource type="Script" path="res://Script/game_scene.gd" id="1_pu75g"]
+[ext_resource type="PackedScene" uid="uid://dr8cmvw23etn1" path="res://Scenes/tiles.tscn" id="2_0d81r"]
+[ext_resource type="Texture2D" uid="uid://cqu5d0co14q8u" path="res://Assets/ui/green_button00.png" id="2_xdaiv"]
+[ext_resource type="PackedScene" uid="uid://dok8ujkwnougm" path="res://Scenes/game_over.tscn" id="3_8okar"]
+[ext_resource type="Texture2D" uid="uid://24brmoybfh85" path="res://Assets/ui/yellow_button00.png" id="3_cp1hc"]
+[ext_resource type="Texture2D" uid="uid://b60fwpvxc3ehe" path="res://Assets/ui/blue_button00.png" id="4_vdyoa"]
+[ext_resource type="PackedScene" uid="uid://bsvhewhvf0pje" path="res://Scenes/scorer.tscn" id="6_cod4a"]
+[ext_resource type="Texture2D" uid="uid://gh5sldbtg6w5" path="res://Assets/images/backgroundEmpty.png" id="7_xud5g"]
+[ext_resource type="AudioStream" uid="uid://cur7q7ldscuvr" path="res://Assets/sounds/bgm_action_4.mp3" id="10_qvtrp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hrjph"]
+font = ExtResource("1_ffjb5")
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_atvji"]
+font = ExtResource("1_ffjb5")
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_c3uje"]
+font = ExtResource("1_ffjb5")
+font_size = 30
+
+[node name="game_scene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pu75g")
+tiles = ExtResource("2_0d81r")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="pairs_box" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/pairs_box"]
+layout_mode = 2
+text = "Pairs"
+label_settings = SubResource("LabelSettings_hrjph")
+
+[node name="Label2" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/pairs_box"]
+layout_mode = 2
+text = "1230"
+label_settings = SubResource("LabelSettings_atvji")
+
+[node name="time_box" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/time_box"]
+layout_mode = 2
+text = "Time"
+label_settings = SubResource("LabelSettings_hrjph")
+
+[node name="Label2" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/time_box"]
+layout_mode = 2
+text = "1230"
+label_settings = SubResource("LabelSettings_atvji")
+
+[node name="move_box" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/move_box"]
+layout_mode = 2
+text = "Move"
+label_settings = SubResource("LabelSettings_hrjph")
+
+[node name="Label2" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/move_box"]
+layout_mode = 2
+text = "1230"
+label_settings = SubResource("LabelSettings_atvji")
+
+[node name="exit_button" type="TextureButton" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_xdaiv")
+texture_pressed = ExtResource("3_cp1hc")
+texture_hover = ExtResource("4_vdyoa")
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/exit_button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Exit"
+label_settings = SubResource("LabelSettings_c3uje")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_xud5g")
+
+[node name="AudioListener2D" type="AudioListener2D" parent="CanvasLayer/TextureRect"]
+
+[node name="scorer" parent="." instance=ExtResource("6_cod4a")]
+
+[node name="game_over" parent="." instance=ExtResource("3_8okar")]
+visible = false
+z_index = 2
+layout_mode = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_qvtrp")
+autoplay = true
+
+[connection signal="timeout" from="Timer" to="." method="update_label_timer"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/exit_button" to="." method="_on_exit_button_pressed"]

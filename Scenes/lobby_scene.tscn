@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://cnpj8rg4qbceh"]
 
-[ext_resource type="Script" path="res://Script/lobby_scene.gd" id="1_0knpd"]
+[ext_resource type="Script" uid="uid://cwr1yf0iatnpe" path="res://Script/lobby_scene.gd" id="1_0knpd"]
 [ext_resource type="FontFile" uid="uid://bth5fagu36ydm" path="res://Assets/Pixelart/Font/LilitaOne-Regular.ttf" id="1_rj0jf"]
 [ext_resource type="PackedScene" uid="uid://dme7xva7rpgn5" path="res://Scenes/level_button.tscn" id="2_7cvdk"]
 [ext_resource type="PackedScene" uid="uid://dhk0oplfn5sdi" path="res://Scenes/front_animation.tscn" id="2_x7e23"]

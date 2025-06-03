@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://dok8ujkwnougm"]
 
 [ext_resource type="Texture2D" uid="uid://d3bu1rf2nn64a" path="res://Assets/ui/UIbg.png" id="1_i8iac"]
-[ext_resource type="Script" path="res://Script/game_over.gd" id="1_wfe4g"]
+[ext_resource type="Script" uid="uid://basnt2g23il1b" path="res://Script/game_over.gd" id="1_wfe4g"]
 [ext_resource type="Texture2D" uid="uid://b60fwpvxc3ehe" path="res://Assets/ui/blue_button00.png" id="2_7eg6d"]
 [ext_resource type="Texture2D" uid="uid://cqu5d0co14q8u" path="res://Assets/ui/green_button00.png" id="3_rgx03"]
 [ext_resource type="Texture2D" uid="uid://d12ofmpbuu8pl" path="res://Assets/ui/grey_button00.png" id="4_6h5w6"]

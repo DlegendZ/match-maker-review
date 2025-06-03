@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://5vu1ci0324kr"]
 
 [ext_resource type="FontFile" uid="uid://bth5fagu36ydm" path="res://Assets/Pixelart/Font/LilitaOne-Regular.ttf" id="1_ffjb5"]
-[ext_resource type="Script" path="res://Script/game_scene.gd" id="1_pu75g"]
+[ext_resource type="Script" uid="uid://vtrmnu7ancc2" path="res://Script/game_scene.gd" id="1_pu75g"]
 [ext_resource type="PackedScene" uid="uid://dr8cmvw23etn1" path="res://Scenes/tiles.tscn" id="2_0d81r"]
 [ext_resource type="Texture2D" uid="uid://cqu5d0co14q8u" path="res://Assets/ui/green_button00.png" id="2_xdaiv"]
 [ext_resource type="PackedScene" uid="uid://dok8ujkwnougm" path="res://Scenes/game_over.tscn" id="3_8okar"]

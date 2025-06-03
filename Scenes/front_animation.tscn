@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dhk0oplfn5sdi"]
 
-[ext_resource type="Script" path="res://Script/front_animation.gd" id="1_tgb67"]
+[ext_resource type="Script" uid="uid://b271fx64carsy" path="res://Script/front_animation.gd" id="1_tgb67"]
 
 [node name="front_animation" type="TextureRect"]
 offset_right = 120.0

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bbkpaplmio4jo" path="res://Assets/ui/level_select_frame_128.png" id="2_emvwk"]
 [ext_resource type="Texture2D" uid="uid://d0x21ndd6nl82" path="res://Assets/ui/level_select_frame_hover_128.png" id="2_l5270"]
 [ext_resource type="FontFile" uid="uid://bth5fagu36ydm" path="res://Assets/Pixelart/Font/LilitaOne-Regular.ttf" id="3_4qruw"]
-[ext_resource type="Script" path="res://Script/level_button.gd" id="4_pccsv"]
+[ext_resource type="Script" uid="uid://bsk3q6ii5n0mu" path="res://Script/level_button.gd" id="4_pccsv"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_3wa05"]
 font = ExtResource("3_4qruw")

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://ce0jy3nstg4v0" path="res://Assets/Frame.png" id="1_w025m"]
 [ext_resource type="Texture2D" uid="uid://dvya8legxtx2a" path="res://Assets/Blue Frame.png" id="2_i6kjp"]
-[ext_resource type="Script" path="res://Script/tiles.gd" id="2_ngf2l"]
+[ext_resource type="Script" uid="uid://cl2dvph644ipp" path="res://Script/tiles.gd" id="2_ngf2l"]
 [ext_resource type="Texture2D" uid="uid://75k02bn8n40a" path="res://Assets/Pixelart/Big (120x120) PNG/Youtube.png" id="3_1xpf8"]
 
 [node name="tiles" type="TextureButton"]
